@@ -87,6 +87,10 @@ class TestCashRegister:
         sys.stdout = sys.__stdout__
         assert(captured_out.getvalue() == "There is no discount to apply.\n")
         self.reset_register_totals()
+        
+        
+        
+        
 
     def test_items_list_without_multiples(self):
         '''returns an array containing all items that have been added'''
